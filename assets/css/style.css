@@ -1,0 +1,203 @@
+/* Tools */
+/* =================================================== */
+/* State */
+/* =================================================== */
+/* Base */
+/* =================================================== */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background: url("http://i.imgur.com/2cM5XQT.jpg") top center no-repeat;
+}
+
+body {
+  font-family: "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  width: 97%;
+  height: auto;
+  margin: 0 1.5%;
+}
+
+.lt-ie8 .row {
+  zoom: 1;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+@media (min-width: 960px) {
+  .fr {
+    float: right;
+  }
+
+  .fl {
+    float: left;
+  }
+}
+/* Module */
+/* =================================================== */
+/* Typography */
+.page__title {
+  margin: 0 0 0.625em 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.75em;
+}
+
+.section__title {
+  margin: 1.25em 0 0.625em;
+  border-bottom: 1px solid #fff;
+  font-size: 1.875em;
+  font-weight: 600;
+}
+
+.section__subtitle {
+  margin: 0.625em 0 0.3125em;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  margin-bottom: 0.625em;
+  padding: 0.375em 0.875em 0.1875em;
+  border: 0;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+.button {
+  background: #7f8c8d;
+  color: white;
+  border-bottom: 0.1875em solid #7f8c8d;
+}
+.button:hover {
+  border-bottom-color: #5a6465;
+}
+
+.button--danger {
+  background: #e74c3c;
+  color: white;
+  border-bottom: 0.1875em solid #e74c3c;
+}
+.button--danger:hover {
+  border-bottom-color: #bf2718;
+}
+
+.button--success {
+  background: #2ecc71;
+  color: white;
+  border-bottom: 0.1875em solid #2ecc71;
+}
+.button--success:hover {
+  border-bottom-color: #208e4e;
+}
+
+.button--warning {
+  background: #f1c40f;
+  color: white;
+  border-bottom: 0.1875em solid #f1c40f;
+}
+.button--warning:hover {
+  border-bottom-color: #aa8a0a;
+}
+
+.button--info {
+  background: #3498db;
+  color: white;
+  border-bottom: 0.1875em solid #3498db;
+}
+.button--info:hover {
+  border-bottom-color: #1d6fa5;
+}
+
+.button--xsmall {
+  font-size: 0.75em;
+}
+
+.button--small {
+  font-size: 0.875em;
+}
+
+.button--medium {
+  font-size: 1.25em;
+}
+
+.button--large {
+  font-size: 1.625em;
+}
+
+.button--xlarge {
+  font-size: 1.875em;
+}
+
+/* Messages */
+.system-message {
+  display: block;
+  margin: 0.625em 0;
+  padding: 0.5em 0.9375em;
+  border: 0;
+  border-left: 0.375em solid;
+  background: #ffffff;
+  color: #3e3e3e;
+  font-size: 0.9375em;
+  line-height: inherit;
+  font-weight: 30;
+  outline: 0 none;
+  cursor: pointer;
+}
+
+.system-message {
+  border-color: #7f8c8d;
+}
+
+.system-message--danger {
+  border-color: #e74c3c;
+}
+
+.system-message--success {
+  border-color: #2ecc71;
+}
+
+.system-message--warning {
+  border-color: #f1c40f;
+}
+
+.system-message--info {
+  border-color: #3498db;
+}
+
+/* Layout */
+/* =================================================== */
+.main {
+  width: 100%;
+  padding: 1.875em;
+  margin: 1.25em auto;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 960px) {
+  .main {
+    width: 60em;
+  }
+}

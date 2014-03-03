@@ -1,0 +1,15 @@
+$em-base: 16px !default;
+
+@function emCalc($pxWidth) {
+	@return $pxWidth / $em-base * 1em
+}
+
+
+// Colors
+$color-default: rgba(127, 140, 141,1.0);
+$color-success: rgba(46, 204, 113,1.0);
+$color-warning: rgba(241, 196, 15,1.0);
+$color-danger:  rgba(231, 76, 60,1.0);
+$color-info:    rgba(52, 152, 219,1.0);
+$color-link:    rgba(56, 130, 168,1.0);
+$color-bgwhite: rgba(254,251,250,1.0);

@@ -1,0 +1,43 @@
+*,*:after,*:before {
+	@include border-box();
+}
+
+html {
+	background: url('http://i.imgur.com/2cM5XQT.jpg') top center no-repeat;
+}
+body {
+	font-family: "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-size: $em-base;
+	line-height: 1.6;
+	color: #fff;
+}
+
+
+
+
+a {
+	// color: $link_color;
+	text-decoration: none;
+	&:hover {
+		// border-bottom: 1px solid $link_color
+	}
+}
+
+.wrap {
+	width: 97%;
+	height: auto;
+	margin: 0 1.5%;
+}
+
+.row {
+	@include clearfix;
+}
+
+@include desk-tablet() {
+	.fr {
+		float: right;
+	}
+	.fl {
+		float: left;
+	}
+}

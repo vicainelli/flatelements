@@ -1,0 +1,41 @@
+%message {
+	display: block;
+	margin:  emCalc(10px) 0;
+	padding: emCalc(8px) emCalc(15px);
+	border: 0;
+	border-left: emCalc(6px) solid;
+	background: #ffffff;
+	color: #3e3e3e;
+	font-size: emCalc(15px);
+	line-height: inherit;
+	font-weight: 30;
+	outline: 0 none;
+	cursor: pointer;
+}
+
+
+@mixin message ($border-color: $color-default) {
+	border-color: $border-color;
+}
+
+
+.system-message {
+	@extend %message;
+	@include message();
+}
+
+$message-types: (
+  (danger   $color-danger)
+  (success  $color-success)
+  (warning  $color-warning)
+  (info     $color-info)
+) !default;
+
+@each $message-type in $message-types {
+  $type:  nth($message-type, 1);
+  $color: nth($message-type, 2);
+
+  .system-message--#{$type} {
+    @include message($color);
+  }
+}

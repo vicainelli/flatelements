@@ -1,0 +1,61 @@
+%button {
+	display: inline-block;
+	margin-bottom: emCalc(10px);
+	padding: emCalc(6px) emCalc(14px) emCalc(3px);
+	border: 0;
+	font-size: emCalc(16px);
+	line-height: inherit;
+	outline: 0 none;
+	cursor: pointer;
+}
+
+
+@mixin button ($background: $color-default, $color: #ffffff) {
+	background: $background;
+	color: $color;
+	border-bottom: emCalc(3px) solid $background;
+	&:hover {
+		border-bottom-color: darken($background, 15%);
+	}
+}
+
+
+.button {
+	@extend %button;
+	@include button($color-default);
+}
+
+$button-types: (
+  (danger   $color-danger)
+  (success  $color-success)
+  (warning  $color-warning)
+  (info     $color-info)
+) !default;
+
+@each $button-type in $button-types {
+  $type:  nth($button-type, 1);
+  $color: nth($button-type, 2);
+
+  .button--#{$type} {
+    @include button($color);
+  }
+}
+
+
+// Sizes
+$button-sizes: (
+  (xsmall   12px)
+  (small  	14px)
+  (medium  	20px)
+  (large    26px)
+  (xlarge   30px)
+) !default;
+
+@each $button-size in $button-sizes {
+  $type:  nth($button-size, 1);
+  $size: nth($button-size, 2);
+
+  .button--#{$type} {
+		font-size: emCalc($size)
+  }
+}

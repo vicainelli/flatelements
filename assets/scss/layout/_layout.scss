@@ -1,0 +1,10 @@
+.main {
+	width: 100%;
+	@include desk-tablet() {
+		width: emCalc(960px);
+	}
+	padding: emCalc(30px);
+	margin: emCalc(20px) auto;
+	background: rgba(0,0,0, 0.15);
+	box-shadow: 0 0 13px rgba(0,0,0, 0.5);
+}
