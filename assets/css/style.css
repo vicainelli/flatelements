@@ -12,7 +12,7 @@
 }
 
 html {
-  background: url("http://i.imgur.com/2cM5XQT.jpg") top center no-repeat;
+  background: url("http://i.imgur.com/2cM5XQT.jpg") top center no-repeat fixed;
 }
 
 body {
@@ -55,6 +55,57 @@ a {
 /* Module */
 /* =================================================== */
 /* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.625em;
+}
+
+h4 {
+  font-size: 1.25em;
+  color: #000;
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: 300;
+  color: #000;
+}
+
+h6 {
+  font-size: 1.125em;
+  color: #000;
+}
+
+p {
+  margin: 0.625em 0;
+  font-size: 0.9375em;
+  font-weight: 300;
+}
+
+blockquote {
+  padding: 10px 10px 10px 20px;
+  margin-right: 20px;
+  border-left: 5px solid #bababa;
+  color: #555555;
+  font-size: 0.875em;
+  font-weight: 300;
+  font-style: italic;
+}
+
 .page__title {
   margin: 0 0 0.625em 0;
   font-family: 'Oswald', sans-serif;
@@ -72,6 +123,13 @@ a {
   margin: 0.625em 0 0.3125em;
   font-size: 1.25em;
   font-weight: 300;
+}
+
+/* Modules */
+.box-module {
+  padding: 0.625em;
+  background: #fff;
+  color: #3e3e3e;
 }
 
 /* Buttons */
@@ -162,9 +220,7 @@ a {
   color: #3e3e3e;
   font-size: 0.9375em;
   line-height: inherit;
-  font-weight: 30;
-  outline: 0 none;
-  cursor: pointer;
+  font-weight: 300;
 }
 
 .system-message {
